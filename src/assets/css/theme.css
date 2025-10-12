@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Variante re-escrita para permitir cambio manual de el tema */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+    /* Colores */
+    --color-main: oklch(91.583% 0.0001 271.152);
+    --color-main-dark: oklch(18.22% 0.00002 271.152);
+}
+
+/* Aplicacion */
+body {
+    /* Tema Claro */
+    @apply bg-main text-main-dark;
+    /* Tema Oscuro */
+    @apply dark:bg-main-dark dark:text-main;
+    /* Propiedades Extra */
+    @apply min-h-screen transition-colors duration-300 ease-out dark:ease-in dark:duration-500 flex flex-col;
+}
