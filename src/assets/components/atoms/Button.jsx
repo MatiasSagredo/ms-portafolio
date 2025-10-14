@@ -17,7 +17,7 @@ export default function Button({ children, disabled = false, variant = "primary"
     }
   return (
     <button disabled={disabled} onClick={onClick} title={title} type={type}
-      className={`px-4 py-2 rounded-lg font-semibold transition-all shadow-black/30 shadow-lg ${variantes[variant]} hover:not-disabled:brightness-90 active:not-disabled:brightness-75 disabled:opacity-80 disabled:cursor-not-allowed${className ? ` ${className}` : ''}`}
+      className={`rounded-lg font-semibold transition-all shadow-black/30 shadow-lg ${variantes[variant]} hover:not-disabled:brightness-90 active:not-disabled:brightness-75 disabled:opacity-80 disabled:cursor-not-allowed${className ? ` ${className}` : ''}`}
     >
       {children}
     </button>
