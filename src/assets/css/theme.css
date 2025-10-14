@@ -5,8 +5,12 @@
 
 @theme {
     /* Colores */
-    --color-main: oklch(91.583% 0.0001 271.152);
+    --color-main: oklch(100% 0.00011 271.152);
     --color-main-dark: oklch(18.22% 0.00002 271.152);
+    --color-primary: oklch(72.419% 0.09168 245.42);
+    --color-primary-dark: oklch(94.989% 0.00105 11.505);
+    --color-secondary:oklch(53.553% 0.03085 241.652);
+    --color-secondary-dark:oklch(28.278% 0.00569 236.917);
 }
 
 /* Aplicacion */
@@ -16,5 +20,5 @@ body {
     /* Tema Oscuro */
     @apply dark:bg-main-dark dark:text-main;
     /* Propiedades Extra */
-    @apply min-h-screen transition-colors duration-300 ease-out dark:ease-in dark:duration-500 flex flex-col;
+    @apply min-h-screen transition-colors duration-300 ease-out dark:ease-in dark:duration-500 flex flex-col text-base;
 }
