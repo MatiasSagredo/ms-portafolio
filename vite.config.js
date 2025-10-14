@@ -12,7 +12,8 @@ export default defineConfig({
             'edge16',
             'firefox57',
             'node12',
-            'safari11']
+            'safari11'],
+        minify: 'terser'
     },
     css: {
         transformer: 'lightningcss'
